@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Default.astro'
+import Navbar from '../components/Navbar.astro'
+import NavbarClone from '../components/NavbarClone.astro'
+const title = 'Home'
+---
+
+<Layout title={title}>
+  <section class="hero is-fullheight is-grey">
+    <Navbar />
+
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-5 landing-caption">
+            <h1 class="title is-1 is-bold is-spaced">Empowering Talent, Elevating Businesses.</h1>
+                        <h2 class="subtitle is-5 is-muted">Your trusted partner in staffing and recruitment excellence.</h2>
+            <div>
+              <a  class="button cta primary-btn raised mr-2" href="https://forms.gle/wuEBYvoiyd1LSpn7A"> Get Started </a>
+              <a href="#aboutUs" class="button cta"> Discover</a>
+            </div>
+          </div>
+          <div class="column is-7">
+            <img src="/img/illustrations/worker.svg" class="hero-image" alt="Description" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-medium section-feature-grey" id="aboutUs">
+        <div class="container" >
+      <div class="title-wrapper has-text-centered">
+        <h2 class="title is-2">About Us</h2>
+                <h3 class="subtitle is-5 is-muted">
+                    Making it easier for people to find jobs and businesses to find the right talent
+                </h3>
+        <div class="divider is-centered"></div>
+      </div>
+
+      <div class="columns is-vcentered side-feature mt-60">
+        <div class="column is-4 is-offset-2">
+                    <h3 class="title is-3 mb-10 is-title-reveal">
+                        Connecting Talent with Opportunity
+                    </h3>
+          <p class="has-text-justified subtitle is-5 ">
+                At NexGen, we specialize in bridging the gap between skilled professionals and the companies that need them. Based in Raipur, we are committed to delivering reliable and efficient staffing solutions that help businesses thrive and individuals grow. Whether you're a job seeker looking for your next opportunity or an organization in search of the perfect candidate, we make the process simple, transparent, and tailored to your needs.
+          </p>
+        </div>
+        <div class="column is-5">
+          <img src="/img/illustrations/features/feature-1.png" alt="" />
+        </div>
+      </div>
+
+      <div class="columns is-vcentered side-feature mt-60">
+        <div class="column is-5 is-offset-1">
+          <img src="/img/illustrations/features/feature-2.png" alt="" />
+        </div>
+        <div class="column is-4 is-offset-1">
+          <h3 class="title is-3 mb-10 is-title-reveal">Your Recruitment Partner</h3>
+          <p class="has-text-justified subtitle is-5 ">
+            We offer end-to-end hiring support, from candidate sourcing and screening to onboarding and beyond. Our team brings industry insights, modern tools, and a people-first approach to every engagement. With a growing network of employers and job seekers, we ensure that both sides of the hiring equation are met with quality and care. Every match we facilitate is driven by trust, capability, and long-term value.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-feature-grey is-medium">
+    <div class="container">
+      <div class="columns is-vcentered app-side">
+        <div class="column is-4 is-offset-1">
+          <h3 class="title is-3 is-spaced is-title-reveal">Local Expertise, Lasting Impact</h3>
+          <p class="has-text-justified subtitle is-5 ">
+            NexGen is proud to serve the Raipur region with a deep understanding of the local job market and business landscape. Our goal is not just to fill positions, but to build careers and empower organizations. We believe in creating a workforce that is motivated, skilled, and ready to meet the future.
+          </p>
+        </div>
+        <div class="column is-7">
+          <div class="has-text-centered">
+            <img class="side-image" src="/img/illustrations/workers.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

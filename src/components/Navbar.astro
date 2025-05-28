@@ -1,0 +1,36 @@
+<nav x-data="initNavbar()" class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://cssninja.io">
+        <img src="/img/logo/fresh-alt.svg" alt="" width="150" height="30" />
+      </a>
+
+      <div class="navbar-burger" @click="openMobileMenu()">
+        <span class="menu-toggle">
+          <span class="icon-box-toggle" :class=`{
+                'active': mobileOpen,
+                '': !mobileOpen
+            }`>
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div id="navbar-menu" class="navbar-menu is-static" :class=`{
+          'is-active': mobileOpen,
+          '': !mobileOpen
+      }`>
+
+      <div class="navbar-end">
+        <a href="#aboutUs" class="navbar-item is-secondary"> About Us </a>
+        <a class="navbar-item" href="https://forms.gle/wuEBYvoiyd1LSpn7A">
+          <span class="button signup-button secondary-btn raised"> Reach us </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
